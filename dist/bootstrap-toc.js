@@ -68,7 +68,9 @@
       },
 
       createNavList: function() {
-        return $('<ul class="nav navbar-nav"></ul>');
+        // for each nested heading level: indent & decrease font size
+        var style = 'style="padding-left: 10px; font-size: 0.95em;">';
+        return $('<ul class="nav navbar-nav" ' + style +"</ul>");
       },
 
       createChildNavList: function($parent) {
